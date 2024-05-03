@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8/lGdhfnHN/ECJCMbRd6Mqm9v/uU3/IGVEUaOWi+aZWWkUVp1FXl3KXTfbFiD36WaJg2WUGpeokKSKzsD7xdRA==",
+  "dgSpecHash": "PKlOhgnapTpFEZ3b396GVwxvhMU06+8Li0xfJ5ynXm8s9f8PnpPM0UrYRzEj0oVkm+sfFONHj+5Bbu8O6xxKwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nurla\\RiderProjects\\Parser\\Parser\\Parser.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nurla\\.nuget\\packages\\htmlagilitypack\\1.11.60\\htmlagilitypack.1.11.60.nupkg.sha512",
+    "C:\\Users\\nurla\\.nuget\\packages\\htmlagilitypack\\1.11.61\\htmlagilitypack.1.11.61.nupkg.sha512",
     "C:\\Users\\nurla\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.0-preview.3.24172.4\\microsoft.data.sqlite.core.9.0.0-preview.3.24172.4.nupkg.sha512",
     "C:\\Users\\nurla\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0-preview.3.24172.4\\microsoft.entityframeworkcore.9.0.0-preview.3.24172.4.nupkg.sha512",
     "C:\\Users\\nurla\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0-preview.3.24172.4\\microsoft.entityframeworkcore.abstractions.9.0.0-preview.3.24172.4.nupkg.sha512",

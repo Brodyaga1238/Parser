@@ -5,10 +5,11 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <UserSecretsId>81d8f45e-3026-4e5e-9948-0045573d377c</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="HtmlAgilityPack" Version="1.11.60" />
+      <PackageReference Include="HtmlAgilityPack" Version="1.11.61" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0-preview.3.24172.4" />
     </ItemGroup>
 

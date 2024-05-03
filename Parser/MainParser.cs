@@ -9,10 +9,6 @@ namespace Parser
 {
     class MainParser
     {
-        public MainParser()
-        {
-        }
-
         static async Task Main()
         {
             DatabaseInitializer.Initialize();
@@ -56,7 +52,7 @@ namespace Parser
             int semaphoreCount = 25;
             Stopwatch stopwatch = Stopwatch.StartNew();
             Console.WriteLine($"Время начала парсинга {DateTime.Now}");
-            var semaphore = new SemaphoreSlim(semaphoreCount); // Ограничение на 40 одновременных запросов
+            var semaphore = new SemaphoreSlim(semaphoreCount); // Ограничение на 25 одновременных запросов
             try
             {
                 var tasks = urls.Select(url => ProcessUrlAsync(url, semaphore,site));
@@ -198,16 +194,16 @@ namespace Parser
         //Характеристика
         static void ParseCharacteristics(HtmlDocument doc, Product product, ISite site)
         {
-            var characteristics = doc.DocumentNode.SelectNodes(site.CharacteristicsXpath);
-            string type;
-            var characteristicsHelp = doc.DocumentNode.SelectNodes("/html/body/div[position()>0]/div[2]/div[2]/div[2]/div[3]/table/thead/tr/th[1]");
-            type = characteristicsHelp[0].InnerText;
-
+            string type="", text="";
             Dictionary<string, string> test = new Dictionary<string, string>();
-            if (characteristics != null)
-            {
-                string text = "";
-                foreach (var c in characteristics)
+           
+            var characteristicspar = doc.DocumentNode.SelectNodes(site.CharacteristicsXpathPar);
+            
+            if (characteristicspar != null)
+            {   
+                var characteristicsparhelp = doc.DocumentNode.SelectNodes(site.CharacteristicsXpathParHelp);
+                type = characteristicsparhelp[0].InnerText;
+                foreach (var c in characteristicspar)
                 {
                     if (IsNonStandardSize(c.InnerText)) break;
                     text += TextCorrector(c.InnerText) + " ";
@@ -215,19 +211,43 @@ namespace Parser
                 }
                 test.Add(type, text);
             }
-
-            characteristics = doc.DocumentNode.SelectNodes("/html/body/div[position()>0]/div[2]/div[3]/div/div[2]/div/div[2]/div/table/tr/th");
-
+            var characteristics = doc.DocumentNode.SelectNodes(site.CharacteristicsXpath);
+            
             if (characteristics != null)
             {
-                string text;
-
-                characteristicsHelp = doc.DocumentNode.SelectNodes("/html/body/div[position()>0]/div[2]/div[3]/div/div[2]/div/div[2]/div/table/tr/td");
+            
+                var characteristicshelp = doc.DocumentNode.SelectNodes(site.CharacteristicsXpathHelp);
                 for (int i = 0; i < characteristics.Count; i++)
                 {
                     type = TextCorrector(characteristics[i].InnerText);
-                    text = TextCorrector(characteristicsHelp[i].InnerText);
+                    text = TextCorrector(characteristicshelp[i].InnerText);
                     test.Add(type, text);
+                }
+            }
+            var characteristicscolororequ = doc.DocumentNode.SelectSingleNode(site.CharacteristicsColOrEqu);
+            
+            if (characteristicscolororequ != null)
+            {
+                type = TextCorrector (characteristicscolororequ.InnerText);
+                var characteristicscolorhelp = doc.DocumentNode.SelectNodes(site.CharacteristicsColOrEquHelp);
+                foreach (var c in characteristicscolorhelp)
+                {
+                    text = TextCorrector(c.InnerText);
+                    test.Add(type,text);
+                    
+                }
+            }
+            var characteristicscolororequ2 = doc.DocumentNode.SelectSingleNode(site.CharacteristicsColOrEqu2);
+            
+            if (characteristicscolororequ2 != null)
+            {
+                type = TextCorrector (characteristicscolororequ2.InnerText);
+                var characteristicscolorhelp = doc.DocumentNode.SelectNodes(site.CharacteristicsColOrEquHelp2);
+                foreach (var c in characteristicscolorhelp)
+                {
+                    text = TextCorrector(c.InnerText);
+                    test.Add(type,text);
+                   
                 }
             }
 
@@ -246,10 +266,7 @@ namespace Parser
 
         static bool IsNonStandardSize(string text)
         {
-            // Здесь можно добавить логику для определения нестандартных размеров
-            // Например, проверка на наличие числовых значений, которые не соответствуют ожидаемому формату
-
-            // В данном примере просто проверяем, содержит ли текст строки "нестандартный размер"
+            // отмена парсинга характеристик если идут нестанртные размеры
             return text.ToLower().Contains("нестандартные размер");
         }
     }

@@ -7,7 +7,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ee96cd-27b1-454a-bf55-6cb8e2a1ba19" name="Changes" comment="" />
+    <list default="true" id="64ee96cd-27b1-454a-bf55-6cb8e2a1ba19" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Parser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Parser/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/Inteface/ISite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/Inteface/ISite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/MainParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/MainParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/Models/SitesForParsing/Fackel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/Models/SitesForParsing/Fackel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/Parser.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/Parser.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/HtmlAgilityPack.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/HtmlAgilityPack.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/ProductDb — ярлык.lnk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/ref/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/ref/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/refint/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/refint/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Parser.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Parser.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductDb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductDb.db" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +50,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Parser/Db.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Parser/Inteface/IParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/nurla/RiderProjects/Parser/Parser/MainParser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Parser/MainParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Parser/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Parser/Models/Product.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,43 +69,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Parser.executor": "Run",
-    ".NET Static Method.Parser.DatabaseInitializer.Initialize.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
-    "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Parser.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Static Method.Parser.DatabaseInitializer.Initialize.executor&quot;: &quot;Run&quot;,
+    &quot;0dfc9d78-7016-4449-8266-41acdd459d79.executor&quot;: &quot;Debug&quot;,
+    &quot;2277faf9-9856-4a13-910c-8decb3659876.executor&quot;: &quot;Run&quot;,
+    &quot;519a0a9c-6fa3-4924-9626-e93f702f5421.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb",
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlite&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\nurla\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\nurla\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\nurla\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\nurla\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\nurla\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\nurla\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Project.Parser">
+}</component>
+  <component name="RunManager">
     <configuration name="Parser" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Parser/bin/Debug/net8.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -82,33 +118,12 @@
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="Parser.DatabaseInitializer.Initialize" type="DotNetStaticMethod" factoryName=".NET Static Method" temporary="true">
-      <option name="EXE_PATH" value="C:\Users\nurla\AppData\Local\Programs\Rider\lib\ReSharperHost\JetLauncherILc.exe" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Parser/Parser.csproj" />
+      <option name="PROJECT_KIND" value="Unloaded" />
       <option name="PROJECT_TFM" value="net8.0" />
-      <option name="CLASS_NAME" value="Parser.DatabaseInitializer" />
-      <option name="METHOD_NAME" value="Initialize" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue=".NET Static Method.Parser.DatabaseInitializer.Initialize" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -143,7 +158,14 @@
       <workItem from="1714433560212" duration="6319000" />
       <workItem from="1714484798797" duration="854000" />
       <workItem from="1714516683439" duration="2097000" />
-      <workItem from="1714518802866" duration="13273000" />
+      <workItem from="1714518802866" duration="14024000" />
+      <workItem from="1714533263605" duration="966000" />
+      <workItem from="1714534467364" duration="1556000" />
+      <workItem from="1714596351519" duration="3414000" />
+      <workItem from="1714600034323" duration="1509000" />
+      <workItem from="1714751118854" duration="4482000" />
+      <workItem from="1714755665523" duration="1699000" />
+      <workItem from="1714771071828" duration="1965000" />
     </task>
     <task id="LOCAL-00001" summary="Create git">
       <option name="closed" value="true" />
@@ -153,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714532216134</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add files to git">
+      <option name="closed" value="true" />
+      <created>1714532511888</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714532511888</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +204,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Create git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create git" />
+    <MESSAGE value="Add files to git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files to git" />
   </component>
 </project>
