@@ -40,6 +40,8 @@ namespace Parser
         } 
         
         public string OriginUrl { get; set; } //128
+        [NotMapped]
+        public List<ProductIImage> Images { get; set; }
         
         // Конструкторы класса Product
         public Product()

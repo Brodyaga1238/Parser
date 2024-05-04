@@ -17,4 +17,6 @@ public interface ISite
     string CharacteristicsColOrEqu2 { get; } 
     string CharacteristicsColOrEquHelp2 { get; } 
     string IsProductPattern { get;}
+    string ImageUrl { get; }
+    string BaseUrl { get; }
 }

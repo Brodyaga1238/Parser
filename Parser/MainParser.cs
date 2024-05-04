@@ -36,9 +36,9 @@ namespace Parser
                         reader.Read();
                         var url = reader.Value;
                         if (IsProductUrl(url, site))
-                        {
+                         {
                             urls.Add(url);
-                        }
+                         }
                     }
                 }
             }
@@ -80,9 +80,11 @@ namespace Parser
             Console.WriteLine(url);
             var product = await ParserAsync(url,site);
             if (product.Avaible) await Db.AddDb(product);
-            
-            semaphore.Release(); // Освобождаем семафор после выполнения задачи
-            
+            if (product.Avaible)
+            {
+                await ImageParse(url, product, site);
+            }
+            semaphore.Release(); // Освобождаем семафор после выполнения задач
         }
 
         //проверка ссылку на товар
@@ -102,6 +104,11 @@ namespace Parser
 
             if (doc != null)
             {
+                ParseName(doc, product,site);
+                if (product.Avaible==false)
+                { 
+                    return product;
+                }
                 ParseStock(doc, product,site);
                 ParseDescription(doc, product,site);
                 if (product.Avaible==false)
@@ -109,11 +116,9 @@ namespace Parser
                     return product;
                 }
                 ParseCategory(doc, product,site);
-                ParseName(doc, product,site);
                 ParsePrice(doc, product,site);
                 ParseCharacteristics(doc, product,site);
             }
-
             return product;
         }
 
@@ -123,6 +128,32 @@ namespace Parser
             var web = new HtmlWeb();
             return await web.LoadFromWebAsync(url);
         }
+        
+        // Получение URL изображения с помощью XPath
+        static async Task ImageParse(string url, Product product, ISite site)
+        {
+           
+            var doc = await LoadHtmlDocumentAsync(url);
+            if (doc != null)
+            {
+                var imgNodes = doc.DocumentNode.SelectNodes(site.ImageUrl);
+                if (imgNodes != null)
+                {
+                    foreach (var imgNode in imgNodes)
+                    {
+                        string imageUrl = imgNode.GetAttributeValue("href", "");
+                        string fullImageUrl = site.BaseUrl + imageUrl; // Полный URL изображения
+                        var image = new ProductIImage();
+                        image.ProductId = product.Id;
+                        image.Image = new Dictionary<string, string>(); 
+                        image.Image.Add("urls", fullImageUrl); 
+                        // Добавление изображения в базу данных
+                        await Db.AddImageToDb(image);
+                    }
+                }
+            }
+        }
+
         // количество на складе
         static void ParseStock(HtmlDocument doc, Product product, ISite site)
         {
@@ -146,20 +177,21 @@ namespace Parser
         //категория
         static void ParseCategory(HtmlDocument doc, Product product, ISite site)
         {
-            var category = doc.DocumentNode.SelectNodes(site.CategoryXpath);
+            var category = doc.DocumentNode.SelectSingleNode(site.CategoryXpath);
             if (category != null)
             {
-                product.Category = TextCorrector(category[0].InnerText);
+                product.Category = TextCorrector(category.InnerText);
             }
         }
         //название
         static void ParseName(HtmlDocument doc, Product product, ISite site)
         {
-            var name = doc.DocumentNode.SelectNodes(site.NameXpath);
+            var name = doc.DocumentNode.SelectSingleNode(site.NameXpath);
             if (name != null)
             {
-                product.Name = TextCorrector(name[0].InnerText);
+                product.Name = TextCorrector(name.InnerText);
             }
+            else product.Avaible = false;
         }
         
         //описание 
@@ -183,18 +215,27 @@ namespace Parser
         //цена
         static void ParsePrice(HtmlDocument doc, Product product, ISite site)
         {
-            var price = doc.DocumentNode.SelectNodes(site.PriceXpath);
+            var price = doc.DocumentNode.SelectSingleNode(site.PriceXpath);
             if (price != null)
             {
-                string cost = price[0].InnerText;
-                cost = cost.Remove(cost.Length - 4).Replace(" ", "").Replace(".", "");
-                product.Price = Convert.ToInt32(cost);
+                string priceText = price.InnerText;
+                Match match = Regex.Match(priceText, @"(\d+\s?)*(\d+\.\d+)?");
+            
+                // Извлекаем найденное числовое значение
+                string priceValue = match.Value.Replace(" ", "");
+            
+                // Записываем значение цены в объект Product
+                if (int.TryParse(priceValue, out int price1))
+                {
+                    // Записываем значение цены в объект Product
+                    product.Price = price1;
+                }
             }
         }
         //Характеристика
         static void ParseCharacteristics(HtmlDocument doc, Product product, ISite site)
         {
-            string type="", text="";
+            string type, text="";
             Dictionary<string, string> test = new Dictionary<string, string>();
            
             var characteristicspar = doc.DocumentNode.SelectNodes(site.CharacteristicsXpathPar);
@@ -212,16 +253,20 @@ namespace Parser
                 test.Add(type, text);
             }
             var characteristics = doc.DocumentNode.SelectNodes(site.CharacteristicsXpath);
-            
             if (characteristics != null)
             {
-            
                 var characteristicshelp = doc.DocumentNode.SelectNodes(site.CharacteristicsXpathHelp);
+                int c = 0;
                 for (int i = 0; i < characteristics.Count; i++)
-                {
+                { 
                     type = TextCorrector(characteristics[i].InnerText);
-                    text = TextCorrector(characteristicshelp[i].InnerText);
+                    if (site.SitemapUrl == "https://specoda.ru/index.php?route=extension/feed/yandex_sitemap")
+                    {
+                        c++;
+                    }
+                    text = TextCorrector(characteristicshelp[c].InnerText);
                     test.Add(type, text);
+                    c++;
                 }
             }
             var characteristicscolororequ = doc.DocumentNode.SelectSingleNode(site.CharacteristicsColOrEqu);
@@ -267,7 +312,7 @@ namespace Parser
         static bool IsNonStandardSize(string text)
         {
             // отмена парсинга характеристик если идут нестанртные размеры
-            return text.ToLower().Contains("нестандартные размер");
+            return text.ToLower().Contains("нестандартные размеры");
         }
     }
 }

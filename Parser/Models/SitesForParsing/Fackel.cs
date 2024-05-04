@@ -3,7 +3,7 @@ namespace Parser.Models.SitesForParsing;
 public class Fackel : ISite
 {
     public  string SitemapUrl { get; } ="https://f-tk.ru/sitemap.xml";
-    public  string CategoryXpath { get;  }="/html/body/div[position()>0]/div[1]/nav/div/ul/li[5]";
+    public  string CategoryXpath { get;  }="/html/body/div[position()>0]/div[1]/nav/div/ul/li[last()-1]";
     public  string NameXpath { get;} ="//h1";
     public  string DescriptionXpath { get; } ="//html/body/div[position()>0]/div[2]/div[3]/div/div[2]/div/div[1]/div";
     public  string PriceXpath { get; }="//html/body/div[position()>0]/div[2]/div[2]/div[2]/div[2]/div[1]/div/b";
@@ -18,5 +18,7 @@ public class Fackel : ISite
     public string CharacteristicsColOrEquHelp2 { get; } = "/html/body/div[position()>0]/div[2]/div[2]/div[1]/div[4]/ul";
     
     public  string IsProductPattern { get; }=@"https://www\.f-tk\.ru/catalog/item-" + @"\d+/";
+    public string ImageUrl { get; } = "/html/body/div[position()>0]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/a";
+    public string BaseUrl { get; } = "https://www.f-tk.ru";
     
 }

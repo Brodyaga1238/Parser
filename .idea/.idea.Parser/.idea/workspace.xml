@@ -7,7 +7,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ee96cd-27b1-454a-bf55-6cb8e2a1ba19" name="Changes" comment="update versatility" />
+    <list default="true" id="64ee96cd-27b1-454a-bf55-6cb8e2a1ba19" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Parser/.idea/dataSources/33e4d2c9-5625-4594-8287-5fe5fd18e2a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Parser/.idea/dataSources/33e4d2c9-5625-4594-8287-5fe5fd18e2a5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Parser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Parser/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser.sln.DotSettings.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/Inteface/ISite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/Inteface/ISite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/MainParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/MainParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/Models/ProductIImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/Models/ProductIImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/Models/SitesForParsing/Fackel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/Models/SitesForParsing/Fackel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/Parser.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/ProductDb.db" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/ProductDb.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/ProductDb.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/ProductDb.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/ProductDb.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/bin/Debug/net8.0/ProductDb.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/Parser.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/ref/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/ref/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/refint/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/obj/Debug/net8.0/refint/Parser.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,17 +41,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Parser/Db.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3fa134a4f7024c6a9faff12697fb4fb9c8e8a0/ec/57025fb8/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/Db.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Parser/Inteface/IParser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/nurla/RiderProjects/Parser/Parser/MainParser.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Parser/MainParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/Inteface/ISite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/MainParser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Parser/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Parser/Models/Product.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Parser/Models/ProductIImage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/Models/ProductIImage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/Models/SitesForParsing/Fackel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/Models/SitesForParsing/Prabo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/Models/SitesForParsing/SpbAvangard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/Models/SitesForParsing/Specoda.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/Models/SitesForParsing/Ursus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Parser/Models/SitesForParsing/formgost.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -134,7 +165,8 @@
       <workItem from="1714600034323" duration="1509000" />
       <workItem from="1714751118854" duration="4482000" />
       <workItem from="1714755665523" duration="1699000" />
-      <workItem from="1714771071828" duration="2340000" />
+      <workItem from="1714771071828" duration="17906000" />
+      <workItem from="1714814244859" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="Create git">
       <option name="closed" value="true" />
@@ -160,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714773304228</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-">
+      <option name="closed" value="true" />
+      <created>1714773683584</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714773683584</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +240,7 @@
     <MESSAGE value="Create git" />
     <MESSAGE value="Add files to git" />
     <MESSAGE value="update versatility" />
-    <option name="LAST_COMMIT_MESSAGE" value="update versatility" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
 </project>

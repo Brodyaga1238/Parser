@@ -5,6 +5,14 @@ namespace Parser
 {
     public class Db
     {
+        public static async Task AddImageToDb(ProductIImage product1)
+        {
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                db.ProductImages.Add(product1);
+                await db.SaveChangesAsync();
+            }
+        }
         public static async Task AddDb(Product product1)
         {
             using (ApplicationContext db = new ApplicationContext())
@@ -33,13 +41,22 @@ namespace Parser
 
     public class ApplicationContext : DbContext
     {
-        public DbSet<Product> ProductsDb => Set<Product>();
-        
+        public DbSet<Product> ProductsDb { get; set; }
+        public DbSet<ProductIImage> ProductImages { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ProductIImage>()
+                .HasOne(pi => pi.Product)
+                .WithMany(p => p.Images)
+                .HasForeignKey(pi => pi.ProductId);
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=ProductDb.db;");
         }
-        
     }
+
 }
     
