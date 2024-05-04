@@ -3,6 +3,7 @@ using System.Net;
 using System.Xml;
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
+using Microsoft.EntityFrameworkCore;
 using Parser.Models.SitesForParsing;
 
 namespace Parser
@@ -15,9 +16,21 @@ namespace Parser
             ISite site = new Fackel();
             var sitemapUrl = site.SitemapUrl;
             var urls = await LoadUrlsFromSitemap(sitemapUrl, site);
-            await ProcessUrls(urls, site);
+            var processedurls = await GetProcessedUrls();
+            var urlsToProcess = urls.Except(processedurls).ToList();
+            //await Db.ClearDatabases();
+            await ProcessUrls(urlsToProcess, site);
         }
-        
+        static async Task<List<string>> GetProcessedUrls()
+        {
+            using (var db = new ApplicationContext())
+            {
+                return await db.ProcessedUrls.Select(u => u.url).ToListAsync<string>();
+            }
+        }
+
+
+
         
         //метод парсинга ссылок
         static async Task<List<string>> LoadUrlsFromSitemap(string sitemapUrl, ISite site)

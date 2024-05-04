@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a8ed4d47-2836-4d05-897b-d2bb43b6ec18" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Db.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Db.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inteface/IParser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Category.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Parser.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Parser.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Parser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/Parser.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/ProductDb.db" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/ProductDb.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/ProductDb.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/ProductDb.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/ProductDb.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/ProductDb.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Parser.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Parser.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Parser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Parser.dll" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2g0NFk5wSgGUC4CP4WHG3NjlHnz" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/nurla"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+</project>
