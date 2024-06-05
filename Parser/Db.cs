@@ -50,9 +50,18 @@ namespace Parser
     {
         public static void Initialize()
         {
-            using (var db = new ApplicationContext())
+            var dataSourcePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataSource");
+            var databasePath = Path.Combine(dataSourcePath, "ProductDb.db");
+
+            if (!Directory.Exists(dataSourcePath))
             {
-                if (!db.Database.CanConnect())
+                Console.WriteLine("Директория не существует. Создание новой директории...");
+                Directory.CreateDirectory(dataSourcePath);
+            }
+
+            if (!File.Exists(databasePath))
+            {
+                using (var db = new ApplicationContext())
                 {
                     Console.WriteLine("База данных не существует. Создание новой базы данных...");
                     db.Database.EnsureCreated();
@@ -78,10 +87,6 @@ namespace Parser
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var dataSourcePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataSource");
-            if (!Directory.Exists(dataSourcePath))
-            {
-                Directory.CreateDirectory(dataSourcePath);
-            }
             var databasePath = Path.Combine(dataSourcePath, "ProductDb.db");
             optionsBuilder.UseSqlite($"Data Source={databasePath}");
         }

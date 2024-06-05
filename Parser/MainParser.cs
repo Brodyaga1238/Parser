@@ -10,7 +10,7 @@ namespace Parser
 {
     class MainParser
     {
-        static async Task Main()
+        static async Task Main() 
         {
             DatabaseInitializer.Initialize();
             ISite site = new Fackel();
@@ -18,14 +18,21 @@ namespace Parser
             var urls = await LoadUrlsFromSitemap(sitemapUrl, site);
             var processedurls = await GetProcessedUrls();
             var urlsToProcess = urls.Except(processedurls).ToList();
-            //await Db.ClearDatabases();
+            await Db.ClearDatabases();
             await ProcessUrls(urlsToProcess, site);
         }
+        
         static async Task<List<string>> GetProcessedUrls()
         {
+            
             using (var db = new ApplicationContext())
-            {
+            {   
+                if (db.ProcessedUrls.Select(u => u.url).ToListAsync<string>().ToString()=="")
+                {
+                    return new List<string>();
+                }
                 return await db.ProcessedUrls.Select(u => u.url).ToListAsync<string>();
+                
             }
         }
 
@@ -35,8 +42,8 @@ namespace Parser
         //метод парсинга ссылок
         static async Task<List<string>> LoadUrlsFromSitemap(string sitemapUrl, ISite site)
         {
-            WebClient client = new WebClient();
-            string sitemapXml = await client.DownloadStringTaskAsync(sitemapUrl);
+            HttpClient client = new HttpClient();
+            string sitemapXml = await client.GetStringAsync(sitemapUrl);
 
             List<string> urls = new List<string>();
 
